@@ -33,6 +33,7 @@ html, body {
 }
 
 .gh-bkg-grey { background-color:#666A73; }
+.gh-bkg-ltgrey { background-color:#DFDFDF; }
 
 /* padding */
 
@@ -121,7 +122,7 @@ p {
     padding:0;
     font-family:@lato;
     font-size:1.2em;
-    line-height:1.3em;
+    line-height:1.4em;
     color:#4a4a4a;
     display:block;
 }
@@ -251,9 +252,11 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
     }
 
 }
+
 /* panel */
 .gh-panel { padding:8em 0 8em 0; }
 .gh-panel-4 { padding:4em 0 4em 0; }
+
 /* grid */
 .gh_grid {
     display:grid;
@@ -324,12 +327,69 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
 
 }
 
+.gh-person-hero {
+
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    grid-column-gap:0;
+    background-color:#DFDFDF;
+
+    h1 {
+        margin:0 0 0.3em 0;
+        padding:0;
+        font-family:@lato;
+        font-size:4em;
+        font-weight:normal;
+    }
+
+    p {
+        margin:0 0 0.9em 0;
+        font-size:1.4em;
+    }
+
+    .gh-item {
+        align-self:center;
+    }
+
+    .gh-person-info {
+        padding:2em;
+
+        .gh-social { margin:0.5em 0.5em 0 0; }
+
+    }
+
+}
+.gh-person-content {
+    display:grid;
+    grid-template-columns:3fr 4fr;
+    grid-column-gap:2em;
+
+    blockquote {
+        margin:0;
+        padding:0 0 0 2em;
+        border:0;
+        font-size:1.4em;
+        line-height:1.4em;
+        font-style:italic;
+        font-weight:bold;
+        font-family:@lato;
+        color:#d25132;
+        display:block;
+    }
+    blockquote:before { content:"“"; }
+    blockquote:after { content:"”"; }
+}
+
 /* footer */
 .gh-social {
-    margin:0 0 0 0.5em;
     width:100%;
     height:100%;
+    max-width:50px;
+    max-height:50px;
+    display:inline-block;
+}
+footer .gh-social {
+    margin:0 0 0 0.5em;
     max-width:30px;
     max-height:30px;
-    display:inline-block;
 }

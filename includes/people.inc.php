@@ -161,11 +161,46 @@ function gf_list_people( $group, $people ){
 }
 function gf_list_person( $person, $people ){
 
+    $po = new stdClass();
+
     foreach( $people as $item ){
 
-        array_walk( $item, 'gf_get_person_info', $person );
+        foreach( $item as $k => $v ){
+
+            if( $person == strtolower( clean_string( $v['name'] ) ) ){
+        
+                $po->title = $v['certification'] != "" ? $v['title'] . " " . $v['certification'] : $v['title'];
+        
+                $social = '';
+        
+                foreach( $v['social'] as $key => $value ){
+        
+                    if( $key == "linkedin" ){
+        
+                        $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/linkedin.svg"></a>';
+        
+                    }
+                    if( $key == "twitter" ){
+        
+                        $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/twitter.svg"></a>';
+        
+                    }
+        
+                }
+        
+                $po->social = $social;
+                $po->name = $v['name'];
+                $po->image = docroot . $v['image'];
+                $po->quote = $v['content']['quote'];
+                $po->bio = $v['content']['bio'];
+        
+            }
+
+        }
 
     }
+
+    return $po;
     
 }
 
@@ -175,7 +210,9 @@ function gf_get_person_info($v, $k, $person){
 
     if( $person == strtolower( clean_string( $v['name'] ) ) ){
 
-        $title = $v['certification'] != "" ? $v['title'] . " " . $v['certification'] : $v['title'];
+        $po = new stdClass();
+
+        $po->title = $v['certification'] != "" ? $v['title'] . " " . $v['certification'] : $v['title'];
 
         $social = '';
 
@@ -194,42 +231,13 @@ function gf_get_person_info($v, $k, $person){
 
         }
 
-        $quote = $v['content']['quote'];
-        $bio = $v['content']['bio'];
+        $po->social = $social;
+        $po->name = $v['name'];
+        $po->image = docroot . $v['image'];
+        $po->quote = $v['content']['quote'];
+        $po->bio = $v['content']['bio'];
 
-?>
-
-<section>
-    <div class="gh-container">
-        <div class="gh-person-hero">
-            <div class="gh-item">
-                <img src="<?php echo docroot . $v['image']; ?>" alt="">
-            </div>
-            <div class="gh-item">
-                <div class="gh-person-info">
-                    <h1><?php echo $v['name']; ?></h1>
-                    <p><?php echo $title; ?></p>
-
-                    <?php echo $social; ?>
-
-                </div>
-            </div>
-        </div>
-        <div class="gh-person-content">
-            <div class="gh-item">
-                <blockquote><?php echo $quote; ?></blockquote>
-            </div>
-            <div class="gh-item">
-
-                <?php echo $bio; ?>
-                
-
-            </div>
-        </div>
-    </div>
-</section>
- 
-<?php
+        return $po;
 
     }
     

@@ -13,7 +13,7 @@ include('includes/header.inc.php');
 <section>
     <div class="gh-container">
         <div class="gh-panel-4">
-            <div class="gf_grid gf_grid-1-2-2">
+            <div class="gh_grid gh_grid-1-2-2">
                 <div class="gh-item gh-column-2">
                     <div class="pad-right-exlarge">
                         <h2>Taking a family perspective</h2>
@@ -32,11 +32,11 @@ include('includes/header.inc.php');
 <section>
     <div class="gh-container">
         <div class="gh-panel-4">
-            <div class="gf_grid gf_grid-1-4">
+            <div class="gh_grid gh_grid-1-4">
                 <img src="<?php echo docroot; ?>img/Grayhawk_Home_02.jpg" alt="" class="gh-cspan-3">
             </div>
         </div>
-        <div class="gf_grid gf_grid-1-3">
+        <div class="gh_grid gh_grid-1-3">
             <div class="gh-item">
                 <h2>Extraordinary relationships matter</h2>
             </div>
@@ -54,12 +54,12 @@ include('includes/header.inc.php');
         <div class="gh-panel-4">
             <img src="<?php echo docroot; ?>img/Grayhawk_Home_03.jpg" alt="">
         </div>
-        <div class="gf_grid gf_grid-1-2-2">
+        <div class="gh_grid gh_grid-1-2-2">
             <div class="gh-item gh-column-2 gh-cspan-2">
                 <h2>Endowment style portfolios</h2>
             </div>
         </div>
-        <div class="gf_grid gf_grid-1-2-2">
+        <div class="gh_grid gh_grid-1-2-2">
             <div class="gh-item gh-column-2">
                 <p>Our investment approach leverages the expertise and discipline gained from institutional investing to create a portfolio designed to capitalize on market appreciation while providing protection during market turmoil.</p>
             </div>
@@ -75,12 +75,12 @@ include('includes/header.inc.php');
         <div class="gh-container">
             <img src="<?php echo docroot; ?>img/Grayhawk_Home_04.jpg" alt="">
             <div class="gh-panel-4">
-                <div class="gf_grid gf_grid-1-4">
+                <div class="gh_grid gh_grid-1-4">
                     <div class="gh-item gh-cspan-3">
                         <h2 class="emphasized white">What does it mean to be an invaluable partner?</h2>
                     </div>
                 </div>
-                <div class="gf_grid gf_grid-2-2-1">
+                <div class="gh_grid gh_grid-2-2-1">
                     <div class="gh-item">
                         <p class="white">Being an invaluable partner sets a high standard for our interactions and dealings with each family. Partners act with integrity and resolve in the face of the unexpected and have courage of their convictions.</p>
                     </div>

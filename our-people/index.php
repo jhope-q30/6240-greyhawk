@@ -8,11 +8,48 @@ include('../includes/people.inc.php');
 <main>
 <?php
 
-if( isset( $_GET['person'] ) ): /* show person html */
+if( isset( $_GET['person'] ) ): /* get person html */
 
-    gf_list_person( $_GET['person'], $gf_people );
+    $po = gf_list_person( $_GET['person'], $gf_people );
 
 ?>
+
+<section>
+    <div class="gh-bkg-ltgrey">
+        <div class="gh-container">
+            <div class="gh-person-hero">
+                <div class="gh-item">
+                    <img src="<?php echo $po->image; ?>" alt="">
+                </div>
+                <div class="gh-item">
+                    <div class="gh-person-info">
+                        <h1><?php echo $po->name; ?></h1>
+                        <p><?php echo $po->title; ?></p>
+
+                        <?php echo $po->social; ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gh-container">
+        <div class="gh-panel-4">
+            <div class="gh-person-content">
+                <div class="gh-item">
+                    <blockquote><?php echo $po->quote; ?></blockquote>
+                </div>
+                <div class="gh-item">
+
+                    <?php echo $po->bio; ?>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 
 else: /* show our people html */
@@ -28,12 +65,14 @@ else: /* show our people html */
 </section>
 <section>
     <div class="gh-container">
-        <div class="gh_grid gh_grid-1-2 gh_grid-nogap">
-            <div class="gh-item">
-                <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
-            </div>
-            <div class="gh-item">
-                <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
+        <div class="gh-panel-4">
+            <div class="gh_grid gh_grid-1-2 gh_grid-nogap">
+                <div class="gh-item">
+                    <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
+                </div>
+                <div class="gh-item">
+                    <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>

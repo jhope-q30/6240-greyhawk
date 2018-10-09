@@ -2,7 +2,7 @@
 <footer id="gh-footer">
     <div class="gh-panel-4">
         <div class="gh-container">
-            <div class="gf_grid gf_grid-1-3">
+            <div class="gh_grid gh_grid-1-3">
                 <div class="gh-logo">
                     <a href="<?php echo docroot; ?>">
                         <img src="<?php echo docroot; ?>img/Grayhawk-logo-website.svg" alt="Greyhawk">
@@ -10,7 +10,7 @@
                 </div>
                 <div class="gh-item gh-cspan-2">
                     <p><strong>Grayhawk Investment Strategies Inc.</strong></p>
-                    <div class="gf_grid gf_grid-1-2">
+                    <div class="gh_grid gh_grid-1-2">
                         <div class="gh-item">
                             <p><small>Vintage Tower East<br>
 Suite 800, 322 – 11th Avenue SW<br>
@@ -24,7 +24,7 @@ Toronto, Ontario M5V 2L1</small></p>
                 </div>
             </div>
             <div class="pad-top-medium">
-                <div class="gf_grid gf_grid-1-2">
+                <div class="gh_grid gh_grid-1-2">
                     <div class="gh-item">
                         <p><small>&copy; Copyright and trademark information</small></p>
                     </div>
