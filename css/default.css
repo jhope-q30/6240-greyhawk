@@ -1,0 +1,375 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Lusitana', sans-serif;
+  width: 100%;
+}
+.gh-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.gh-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  display: block;
+}
+.gh-container img {
+  width: auto;
+  max-width: 100% !important;
+  display: block;
+}
+.gh-bkg-grey {
+  background-color: #666A73;
+}
+/* padding */
+/* pad everything */
+.pad-tiny {
+  padding: 0.5em !important;
+}
+.pad-small {
+  padding: 1em !important;
+}
+.pad-medium {
+  padding: 1.5em !important;
+}
+.pad-large {
+  padding: 2em !important;
+}
+.pad-exlarge {
+  padding: 3em !important;
+}
+/* pad top */
+.pad-top-tiny {
+  padding-top: 0.5em !important;
+}
+.pad-top-small {
+  padding-top: 1em !important;
+}
+.pad-top-medium {
+  padding-top: 1.5em !important;
+}
+.pad-top-large {
+  padding-top: 2em !important;
+}
+.pad-top-exlarge {
+  padding-top: 3em !important;
+}
+/* pad right */
+.pad-right-tiny {
+  padding-right: 0.5em !important;
+}
+.pad-right-small {
+  padding-right: 1em !important;
+}
+.pad-right-medium {
+  padding-right: 1.5em !important;
+}
+.pad-right-large {
+  padding-right: 2em !important;
+}
+.pad-right-exlarge {
+  padding-right: 3em !important;
+}
+/* pad bottom */
+.pad-bottom-tiny {
+  padding-bottom: 0.5em !important;
+}
+.pad-bottom-small {
+  padding-bottom: 1em !important;
+}
+.pad-bottom-medium {
+  padding-bottom: 1.5em !important;
+}
+.pad-bottom-large {
+  padding-bottom: 2em !important;
+}
+.pad-bottom-exlarge {
+  padding-bottom: 3em !important;
+}
+/* pad left */
+.pad-left-tiny {
+  padding-left: 0.5em !important;
+}
+.pad-left-small {
+  padding-left: 1em !important;
+}
+.pad-left-medium {
+  padding-left: 1.5em !important;
+}
+.pad-left-large {
+  padding-left: 2em !important;
+}
+.pad-left-exlarge {
+  padding-left: 3em !important;
+}
+/* remove padding */
+.nopad-top {
+  padding-top: 0 !important;
+}
+.nopad-right {
+  padding-right: 0 !important;
+}
+.nopad-bottom {
+  padding-bottom: 0 !important;
+}
+.nopad-left {
+  padding-left: 0 !important;
+}
+.nopad {
+  padding: 0 !important;
+}
+/* margin padding */
+.nomrgn-top {
+  margin-top: 0 !important;
+}
+.nomrgn-right {
+  margin-right: 0 !important;
+}
+.nomrgn-bottom {
+  margin-bottom: 0 !important;
+}
+.nomrgn-left {
+  margin-left: 0 !important;
+}
+.nomrgn {
+  margin: 0 !important;
+}
+/* text */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 0.7em 0;
+  padding: 0;
+  line-height: 1.3em;
+  color: #4a4a4a;
+  display: block;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 2.75em;
+}
+h2.emphasized {
+  font-family: 'Lusitana', sans-serif;
+  font-size: 3.25em;
+  line-height: 1.2em;
+}
+p {
+  margin: 0 0 0.7em 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  color: #4a4a4a;
+  display: block;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: center;
+}
+/* color */
+.white {
+  color: #fff;
+}
+/* links */
+a,
+a:link,
+a:active,
+a:focus,
+a:visited,
+a:hover {
+  color: #4a4a4a;
+}
+/* logo */
+.gh-logo a {
+  display: block;
+}
+.gh-logo a img {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+}
+/* header */
+#gh-header {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  max-width: 1024px;
+}
+#gh-header .gh-logo {
+  padding: 1em 0 1em 2em;
+}
+#gh-header #gh-nav {
+  margin: 1em 0 0 0;
+  padding: 1em 2em 1em 0;
+  grid-column-start: 2;
+  text-align: right;
+}
+#gh-header #gh-nav a {
+  margin: 0 0 0 2em;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+/* hero */
+.gh-hero {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1024px;
+}
+.gh-hero img {
+  width: 100%;
+  display: block;
+}
+.gh-hero span.gh-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+.gh-hero span.gh-caption h1 {
+  margin: 0 auto;
+  padding: 0 0 1em 0;
+  max-width: 768px;
+  font-family: 'Lusitana', sans-serif;
+  font-size: 3.75em;
+  font-weight: normal;
+  line-height: 1.2em;
+  color: #fff;
+  display: block;
+}
+.gh-hero-full {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  height: 100vh;
+  max-height: 540px;
+  background-color: #4a4a4a;
+  align-items: stretch;
+  display: flex;
+}
+.gh-hero-full span.gh-caption {
+  position: relative;
+  margin: 0 auto;
+  max-width: 768px;
+  align-self: center;
+}
+.gh-hero-full span.gh-caption h1 {
+  margin: 0;
+  padding: 0 0 0.33em 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+.gh-hero-full span.gh-caption p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  line-height: 1.4em;
+}
+/* panel */
+.gh-panel {
+  padding: 8em 0 8em 0;
+}
+.gh-panel-4 {
+  padding: 4em 0 4em 0;
+}
+/* grid */
+.gh_grid {
+  display: grid;
+  grid-column-gap: 1em;
+}
+.gh_grid-1-2-2 {
+  grid-template-columns: 1fr 4fr 4fr;
+}
+.gh_grid-2-2-1 {
+  grid-template-columns: 4fr 4fr 1fr;
+}
+.gh_grid-1-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.gh_grid-1-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gh_grid-1-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.gh-column-1 {
+  grid-column-start: 1 !important;
+}
+.gh-column-2 {
+  grid-column-start: 2 !important;
+}
+.gh-column-3 {
+  grid-column-start: 3 !important;
+}
+.gh-column-4 {
+  grid-column-start: 4 !important;
+}
+.gh-cspan-2 {
+  grid-column-end: span 2;
+}
+.gh-cspan-3 {
+  grid-column-end: span 3;
+}
+.gh_grid-nogap {
+  grid-column-gap: 0 !important;
+}
+.grid-item {
+  justify-self: start;
+  align-self: start;
+}
+/* our people */
+.gh-people-column {
+  padding: 4em 0 2em 0;
+}
+.gh-people-column h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8em;
+  color: #d25132;
+}
+.gh-people-column a.gh-person {
+  padding: 0 0 1.5em 0;
+  display: block;
+  text-decoration: none;
+}
+.gh-people-column a.gh-person span.gh-person-name,
+.gh-people-column a.gh-person span.gh-person-title {
+  padding: 0.5em 0 0em 0;
+  font-family: 'Lato', sans-serif;
+  display: block;
+}
+.gh-people-column a.gh-person span.gh-person-name {
+  font-size: 1.5em;
+}
+.gh-people-column a.gh-person span.gh-person-title {
+  font-size: 1em;
+  font-style: italic;
+}
+/* footer */
+.gh-social {
+  margin: 0 0 0 0.5em;
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  max-height: 30px;
+  display: inline-block;
+}
