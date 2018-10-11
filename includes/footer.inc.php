@@ -3,7 +3,7 @@
     <div class="gh-panel-4">
         <div class="gh-container">
             <div class="gh_grid gh_grid-1-3">
-                <div class="gh-logo">
+                <div class="gh-item gh-logo">
                     <a href="<?php echo docroot; ?>">
                         <img src="<?php echo docroot; ?>img/Grayhawk-logo-website.svg" alt="Greyhawk">
                     </a>
