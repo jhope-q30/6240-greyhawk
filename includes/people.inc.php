@@ -54,7 +54,7 @@ $gf_people = array(
         array(
             "name" => "Greg Gipson",
             "title" => "Chief Investment Officer",
-            "certification" => "MSc EESOR",
+            "certification" => "MSc&nbsp;EESOR",
             "image" => "img/temp-bio-img.jpg",
             "social" => array(
                 "linkedin" => "#"
@@ -79,7 +79,7 @@ $gf_people = array(
         array(
             "name" => "Ankit Singhal",
             "title" => "Managing Director, Portfolio Manager",
-            "certification" => "MBA, CFA",
+            "certification" => "MBA,&nbsp;CFA",
             "image" => "img/temp-bio-img.jpg",
             "social" => array(
                 "linkedin" => "#"
@@ -162,6 +162,7 @@ function gf_list_people( $group, $people ){
 function gf_list_person( $person, $people ){
 
     $po = new stdClass();
+    $po->name = false;
 
     foreach( $people as $item ){
 
@@ -169,30 +170,12 @@ function gf_list_person( $person, $people ){
 
             if( $person == strtolower( clean_string( $v['name'] ) ) ){
         
-                $po->title = $v['certification'] != "" ? $v['title'] . " " . $v['certification'] : $v['title'];
-        
-                $social = '';
-        
-                foreach( $v['social'] as $key => $value ){
-        
-                    if( $key == "linkedin" ){
-        
-                        $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/linkedin.svg"></a>';
-        
-                    }
-                    if( $key == "twitter" ){
-        
-                        $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/twitter.svg"></a>';
-        
-                    }
-        
-                }
-        
-                $po->social = $social;
-                $po->name = $v['name'];
-                $po->image = docroot . $v['image'];
-                $po->quote = $v['content']['quote'];
-                $po->bio = $v['content']['bio'];
+                $po->title  = $v['certification'] != "" ? $v['title'] . "<br>" . $v['certification'] : $v['title'];
+                $po->social = $v['social'];
+                $po->name   = $v['name'];
+                $po->image  = $v['image'];
+                $po->quote  = $v['content']['quote'];
+                $po->bio    = $v['content']['bio'];
         
             }
 
@@ -201,45 +184,6 @@ function gf_list_person( $person, $people ){
     }
 
     return $po;
-    
-}
-
-/* array functions */
-
-function gf_get_person_info($v, $k, $person){
-
-    if( $person == strtolower( clean_string( $v['name'] ) ) ){
-
-        $po = new stdClass();
-
-        $po->title = $v['certification'] != "" ? $v['title'] . " " . $v['certification'] : $v['title'];
-
-        $social = '';
-
-        foreach( $a['social'] as $key => $value ){
-
-            if( $key == "linkedin" ){
-
-                $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/linkedin.svg"></a>';
-
-            }
-            if( $key == "twitter" ){
-
-                $social .= '<a href="' . $value . '" class="gh-social"><img src="' . docroot . 'img/twitter.svg"></a>';
-
-            }
-
-        }
-
-        $po->social = $social;
-        $po->name = $v['name'];
-        $po->image = docroot . $v['image'];
-        $po->quote = $v['content']['quote'];
-        $po->bio = $v['content']['bio'];
-
-        return $po;
-
-    }
     
 }
 
@@ -254,7 +198,7 @@ function gf_get_persons($v, $k, $group){
 }
 function gf_get_person($a){
 
-    $link = $_SERVER['PHP_SELF'] . "?person=" . strtolower( clean_string( $a['name'] ) );
+    $link = $_SERVER['REQUEST_URI'] . "person/" . strtolower( clean_string( $a['name'] ) ) . "/";
     $name = $a['certification'] != "" ? $a['name'] . " " . $a['certification'] : $a['name'];
 
 ?>

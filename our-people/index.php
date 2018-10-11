@@ -1,16 +1,28 @@
 <?php
 
 $page_name = 'Our people';
-include('../includes/header.inc.php');
 include('../includes/people.inc.php');
+
+if( isset( $_GET['person'] ) ){
+
+    $po = gf_list_person( $_GET['person'], $gf_people );
+
+    if( !$po->name ){
+
+        header( "Location: ./" );
+        die();
+
+    }
+
+}
+
+include('../includes/header.inc.php');
 
 ?>
 <main>
 <?php
 
 if( isset( $_GET['person'] ) ): /* get person html */
-
-    $po = gf_list_person( $_GET['person'], $gf_people );
 
 ?>
 
@@ -19,14 +31,26 @@ if( isset( $_GET['person'] ) ): /* get person html */
         <div class="gh-container">
             <div class="gh-person-hero">
                 <div class="gh-item">
-                    <img src="<?php echo $po->image; ?>" alt="">
+                    <img src="<?php echo docroot . $po->image; ?>" alt="">
                 </div>
                 <div class="gh-item">
                     <div class="gh-person-info">
                         <h1><?php echo $po->name; ?></h1>
                         <p><?php echo $po->title; ?></p>
 
-                        <?php echo $po->social; ?>
+                        <?php
+
+                            foreach( $po->social as $key => $value ):
+
+?>
+
+<a href="<?php echo $value; ?>" class="gh-social"><img src="<?php echo docroot; ?>img/<?php echo $key; ?>.svg"></a>
+
+<?php
+
+                            endforeach;
+
+                        ?>
 
                     </div>
                 </div>
