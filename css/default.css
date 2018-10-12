@@ -125,6 +125,21 @@ body {
 .nopad {
   padding: 0 !important;
 }
+@media (max-width: 480px) {
+  .nopad-tiny {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .nopad-small {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 960px) {
+  .nopad-medium {
+    padding: 0 !important;
+  }
+}
 /* margin padding */
 .nomrgn-top {
   margin-top: 0 !important;
@@ -212,24 +227,45 @@ a:hover {
 }
 #gh-header .gh-logo {
   padding: 1em 0 1em 2em;
-  width: calc(49% - 2em);
   display: inline-block;
+}
+@media (min-width: 300px) {
+  #gh-header .gh-logo img {
+    max-width: 100px;
+  }
+}
+@media (min-width: 480px) {
+  #gh-header .gh-logo {
+    width: calc(49% - 2em);
+  }
+  #gh-header .gh-logo img {
+    max-width: 100%;
+  }
 }
 #gh-header #gh-nav {
   margin: 1em 0 0 0;
   padding: 1em 2em 1em 0;
   text-align: right;
-  width: calc(50% - 2em);
   display: inline-block;
   vertical-align: top;
 }
 #gh-header #gh-nav a {
-  margin: 0 0 0 2em;
+  padding: 0 0 0.5em 0;
   font-family: 'Lato', sans-serif;
   text-align: right;
   color: #4a4a4a;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  #gh-header #gh-nav {
+    width: calc(50% - 2em);
+  }
+  #gh-header #gh-nav a {
+    margin: 0 0 0 2em;
+    font-size: 1.2em;
+  }
 }
 @supports (display:grid) {
   #gh-header {
@@ -272,14 +308,34 @@ a:hover {
 }
 .gh-hero .gh-caption .gh-caption-container h1 {
   margin: 0;
-  padding: 2em 0 0 25px;
   max-width: 960px;
   font-family: 'Lusitana', sans-serif;
-  font-size: 4.6em;
   font-weight: normal;
   line-height: 1.2em;
   color: #fff;
   display: block;
+}
+@media (min-width: 300px) {
+  .gh-hero .gh-caption .gh-caption-container h1 {
+    font-size: 1.5em;
+    padding: 1em 1em 0 25px;
+  }
+}
+@media (min-width: 480px) {
+  .gh-hero .gh-caption .gh-caption-container h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .gh-hero .gh-caption .gh-caption-container h1 {
+    font-size: 3.6em;
+  }
+}
+@media (min-width: 960px) {
+  .gh-hero .gh-caption .gh-caption-container h1 {
+    font-size: 4.6em;
+    padding: 2em 0 0 25px;
+  }
 }
 .gh-hero-full {
   width: 100%;
@@ -311,12 +367,19 @@ a:hover {
   line-height: 1.4em;
 }
 /* panel */
-.gh-panel {
-  padding: 8em 0 8em 0;
-}
+.gh-panel,
 .gh-panel-4 {
-  padding: 4em 0 4em 0;
+  padding: 2em 0 2em 0;
 }
+@media (min-width: 480px) {
+  .gh-panel {
+    padding: 8em 0 8em 0;
+  }
+  .gh-panel-4 {
+    padding: 4em 0 4em 0;
+  }
+}
+/* non grid browsers */
 .gh_grid {
   display: block;
 }
@@ -331,63 +394,95 @@ a:hover {
   max-width: 100% !important;
   text-align: left;
 }
-.gh_grid-1-2-2 {
-  text-align: right;
+@media (min-width: 300px) {
+  .gh_grid {
+    padding: 1em;
+  }
 }
-.gh_grid-1-2-2 .gh-item {
-  margin-right: 2%;
-  max-width: 39%;
+@media (min-width: 960px) {
+  .gh_grid {
+    padding: 0;
+  }
 }
-.gh_grid-1-2-2 .gh-item.gh-cspan-2 {
-  max-width: 80.5% !important;
-}
-.gh_grid-2-2-1 .gh-item {
-  margin-right: 2%;
-  max-width: 39%;
-}
-.gh_grid-2-2-1 .gh-item.gh-cspan-2 {
-  max-width: 80.5% !important;
-}
-.gh_grid-1-3 .gh-item {
-  max-width: 33%;
-}
-.gh_grid-1-3 .gh-item.gh-cspan-2 {
-  max-width: 66% !important;
-}
-.gh_grid-1-2 .gh-item {
-  max-width: 49%;
+@media (min-width: 768px) {
+  .gh_grid-1-2-2 {
+    text-align: right;
+  }
+  .gh_grid-1-2-2 .gh-item {
+    margin-right: 2%;
+    max-width: 39%;
+  }
+  .gh_grid-1-2-2 .gh-item.gh-cspan-2 {
+    max-width: 80.5% !important;
+  }
+  .gh_grid-2-2-1 .gh-item {
+    margin-right: 2%;
+    max-width: 39%;
+  }
+  .gh_grid-2-2-1 .gh-item.gh-cspan-2 {
+    max-width: 80.5% !important;
+  }
+  .gh_grid-1-3 .gh-item {
+    max-width: 33%;
+  }
+  .gh_grid-1-3 .gh-item.gh-cspan-2 {
+    max-width: 66% !important;
+  }
+  .gh_grid-1-2 .gh-item {
+    max-width: 49%;
+  }
 }
 @supports (display:grid) {
-  .gh_grid {
-    display: grid;
-    grid-column-gap: 1em;
+  @media (min-width: 768px) {
+    .gh_grid {
+      display: grid;
+      grid-column-gap: 1em;
+    }
   }
-  .gh_grid-1-2-2 {
-    grid-template-columns: 1fr 4fr 4fr;
+  @media (min-width: 480px) {
+    .gh_grid-1-2-2 {
+      grid-template-columns: 1fr 1fr;
+    }
   }
-  .gh_grid-2-2-1 {
-    grid-template-columns: 4fr 4fr 1fr;
+  @media (min-width: 768px) {
+    .gh_grid-1-2-2 {
+      grid-template-columns: 1fr 4fr 4fr;
+    }
   }
-  .gh_grid-1-2 {
-    grid-template-columns: repeat(2, 1fr);
+  @media (min-width: 480px) {
+    .gh_grid-2-2-1 {
+      grid-template-columns: 1fr 1fr;
+    }
   }
-  .gh_grid-1-3 {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 768px) {
+    .gh_grid-2-2-1 {
+      grid-template-columns: 4fr 4fr 1fr;
+    }
   }
-  .gh_grid-1-4 {
-    grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 480px) {
+    .gh_grid-1-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gh_grid-1-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gh_grid-1-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
-  .gh-column-1 {
-    grid-column-start: 1 !important;
-  }
-  .gh-column-2 {
-    grid-column-start: 2 !important;
-  }
-  .gh-column-3 {
-    grid-column-start: 3 !important;
-  }
-  .gh-column-4 {
-    grid-column-start: 4 !important;
+  @media (min-width: 768px) {
+    .gh-column-1 {
+      grid-column-start: 1 !important;
+    }
+    .gh-column-2 {
+      grid-column-start: 2 !important;
+    }
+    .gh-column-3 {
+      grid-column-start: 3 !important;
+    }
+    .gh-column-4 {
+      grid-column-start: 4 !important;
+    }
   }
   .gh-cspan-2 {
     grid-column-end: span 2;
@@ -494,8 +589,16 @@ a:hover {
   max-height: 50px;
   display: inline-block;
 }
+footer .gh-logo {
+  padding: 0 0 1em 0;
+}
 footer .gh-social {
   margin: 0 0 0 0.5em;
   max-width: 30px;
   max-height: 30px;
+}
+@media (max-width: 768px) {
+  .text-right {
+    text-align: left;
+  }
 }

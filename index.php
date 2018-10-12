@@ -15,13 +15,13 @@
         <div class="gh-panel-4">
             <div class="gh_grid gh_grid-1-2-2">
                 <div class="gh-item gh-column-2">
-                    <div class="pad-right-exlarge">
+                    <div class="pad-right-exlarge nopad-tiny nopad-small">
                         <h2>Taking a family perspective</h2>
                         <p>Grayhawk is committed to growing the financial legacy of highly successful individuals and their families. Building intergenerational prosperity and wealth is founded upon a thorough understanding of each families’ values, goals and aspirations.</p>
                     </div>
                 </div>
                 <div class="gh-item gh-column-3">
-                    <div class="pad-right-exlarge">
+                    <div class="pad-right-exlarge nopad-tiny nopad-small">
                         <img src="<?php echo docroot; ?>img/Grayhawk_Home_01.jpg" alt="">
                     </div>
                 </div>

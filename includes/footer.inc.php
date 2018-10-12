@@ -10,7 +10,7 @@
                 </div>
                 <div class="gh-item gh-cspan-2">
                     <p><strong>Grayhawk Investment Strategies Inc.</strong></p>
-                    <div class="gh_grid gh_grid-1-2">
+                    <div class="gh_grid gh_grid-1-2 nopad-medium">
                         <div class="gh-item">
                             <p><small>Vintage Tower East<br>
 Suite 800, 322 – 11th Avenue SW<br>
