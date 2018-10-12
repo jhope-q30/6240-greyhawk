@@ -572,7 +572,7 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
         margin:0;
         padding:0 0 0 2em;
         border:0;
-        font-size:1.4em;
+        font-size:1.3em;
         line-height:1.4em;
         font-style:italic;
         font-weight:bold;
@@ -580,11 +580,14 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
         color:#d25132;
         display:block;
     }
-
-    blockquote:before {
+    blockquote p {
+        font-size:inherit !important;
+        color:inherit !important;
+    }
+    blockquote p:first-child:before {
         content:"“";
     }
-    blockquote:after {
+    blockquote p:last-child:after {
         content:"”";
     }
 }

@@ -567,7 +567,7 @@ a:hover {
   margin: 0;
   padding: 0 0 0 2em;
   border: 0;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.4em;
   font-style: italic;
   font-weight: bold;
@@ -575,10 +575,14 @@ a:hover {
   color: #d25132;
   display: block;
 }
-.gh-person-content blockquote:before {
+.gh-person-content blockquote p {
+  font-size: inherit !important;
+  color: inherit !important;
+}
+.gh-person-content blockquote p:first-child:before {
   content: "“";
 }
-.gh-person-content blockquote:after {
+.gh-person-content blockquote p:last-child:after {
   content: "”";
 }
 /* footer */
