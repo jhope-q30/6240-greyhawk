@@ -135,7 +135,7 @@ body {
     padding: 0 !important;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .nopad-medium {
     padding: 0 !important;
   }
@@ -331,7 +331,7 @@ a:hover {
     font-size: 3.6em;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .gh-hero .gh-caption .gh-caption-container h1 {
     font-size: 4.6em;
     padding: 2em 0 0 25px;
@@ -396,10 +396,10 @@ a:hover {
 }
 @media (min-width: 300px) {
   .gh_grid {
-    padding: 1em;
+    padding: 0 1em 0 1em;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .gh_grid {
     padding: 0;
   }

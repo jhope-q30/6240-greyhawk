@@ -85,15 +85,19 @@ else: /* show our people html */
 <section>
     <div class="gh-hero gh-hero-full">
         <span class="gh-caption">
-            <h1>A headline about our people</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="gh_grid">
+                <h1>A headline about our people</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
         </span>
     </div>
 </section>
 <section>
     <div class="gh-container">
         <div class="gh-people-column">
-            <h2>Board of Directors</h2>
+            <div class="gh_grid">
+                <h2>Board of Directors</h2>
+            </div>
             <div class="gh_grid gh_grid-1-3 gh_grid-nogap">
 
                 <?php echo gf_list_people( 'Board of Directors', $gf_people ); ?>
@@ -119,7 +123,9 @@ else: /* show our people html */
 <section>
     <div class="gh-container">
         <div class="gh-people-column">
-            <h2>Our Team</h2>
+            <div class="gh_grid">
+                <h2>Our Team</h2>
+            </div>
             <div class="gh_grid gh_grid-1-3 gh_grid-nogap">
 
                 <?php echo gf_list_people( 'Our Team', $gf_people ); ?>
