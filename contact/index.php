@@ -10,8 +10,10 @@ include('../includes/header.inc.php');
 <section>
     <div class="gh-hero gh-hero-full">
         <span class="gh-caption">
-            <h1>Contact us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="gh_grid">
+                <h1>Contact us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
         </span>
     </div>
 </section>
