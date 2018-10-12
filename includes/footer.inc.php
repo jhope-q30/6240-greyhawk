@@ -23,6 +23,8 @@ Toronto, Ontario M5V 2L1</small></p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="gh-container">
             <div class="pad-top-medium">
                 <div class="gh_grid gh_grid-1-2">
                     <div class="gh-item">

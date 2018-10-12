@@ -1,13 +1,13 @@
-<?php
-include('includes/header.inc.php');
-?>
+<?php include('includes/header.inc.php'); ?>
 <main>
 <section>
     <div class="gh-hero">
         <img src="<?php echo docroot; ?>img/homepage-hero.jpg" alt="">
-        <span class="gh-caption">
-            <h1>Committed to being an <strong>invaluable partner</strong> by making a difference for successful families and their legacies.</h1>
-        </span>
+        <div class="gh-caption">
+            <div class="gh-caption-container">
+                <h1>Committed to being an <strong>invaluable partner</strong> by making a difference for successful families and their legacies.</h1>
+            </div>
+        </div>
     </div>
 </section>
 <section>

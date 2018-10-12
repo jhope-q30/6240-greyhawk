@@ -1,6 +1,7 @@
 
 @max_page_width: 1024px;
-@small_width: 768px;
+@hero_width: 1400px;
+@small_width: 960px;
 @lato:'Lato', sans-serif;
 @lusitana:'Lusitana', sans-serif;
 
@@ -155,7 +156,7 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
 
     margin:0 auto;
     padding:0;
-    max-width:@max_page_width;
+    max-width:@hero_width;
 
     .gh-logo {
 
@@ -221,31 +222,38 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
     margin:0 auto;
     padding:0;
     width:100%;
-    max-width:@max_page_width;
 
     img {
         width:100%;
         display:block;
     }
 
-    span.gh-caption {
+    .gh-caption {
 
         position:absolute;
-        bottom:0;
+        top:0;
+        left:0;
         width:100%;
         display:block;
 
-        h1 {
+        .gh-caption-container {
+
             margin:0 auto;
-            padding:0 0 1em 0;
-            max-width:@small_width;
-            display:block;
-            font-family:@lusitana;
-            font-size:3.75em;
-            font-weight:normal;
-            line-height:1.2em;
-            color:#fff;
-            display:block;
+            width:100%;
+            max-width:@hero_width;
+
+            h1 {
+                margin:0;
+                padding:2em 0 0 25px;
+                max-width:@small_width;
+                font-family:@lusitana;
+                font-size:4.6em;
+                font-weight:normal;
+                line-height:1.2em;
+                color:#fff;
+                display:block;
+            }
+
         }
 
     }

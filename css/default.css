@@ -208,7 +208,7 @@ a:hover {
 #gh-header {
   margin: 0 auto;
   padding: 0;
-  max-width: 1024px;
+  max-width: 1400px;
 }
 #gh-header .gh-logo {
   padding: 1em 0 1em 2em;
@@ -253,24 +253,29 @@ a:hover {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  max-width: 1024px;
 }
 .gh-hero img {
   width: 100%;
   display: block;
 }
-.gh-hero span.gh-caption {
+.gh-hero .gh-caption {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   display: block;
 }
-.gh-hero span.gh-caption h1 {
+.gh-hero .gh-caption .gh-caption-container {
   margin: 0 auto;
-  padding: 0 0 1em 0;
-  max-width: 768px;
+  width: 100%;
+  max-width: 1400px;
+}
+.gh-hero .gh-caption .gh-caption-container h1 {
+  margin: 0;
+  padding: 2em 0 0 25px;
+  max-width: 960px;
   font-family: 'Lusitana', sans-serif;
-  font-size: 3.75em;
+  font-size: 4.6em;
   font-weight: normal;
   line-height: 1.2em;
   color: #fff;
@@ -289,7 +294,7 @@ a:hover {
 .gh-hero-full span.gh-caption {
   position: relative;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 960px;
   align-self: center;
 }
 .gh-hero-full span.gh-caption h1 {
