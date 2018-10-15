@@ -533,9 +533,6 @@ a:hover {
   font-style: italic;
 }
 .gh-person-hero {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-column-gap: 0;
   background-color: #DFDFDF;
 }
 .gh-person-hero h1 {
@@ -558,14 +555,29 @@ a:hover {
 .gh-person-hero .gh-person-info .gh-social {
   margin: 0.5em 0.5em 0 0;
 }
+@media (min-width: 768px) {
+  .gh-person-hero .gh-item {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 49%;
+  }
+}
+@supports (display:grid) {
+  .gh-person-hero {
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    .gh-person-hero {
+      grid-template-columns: 3fr 2fr;
+      grid-column-gap: 0;
+    }
+  }
+}
 .gh-person-content {
-  display: grid;
-  grid-template-columns: 3fr 4fr;
-  grid-column-gap: 2em;
+  text-align: center;
 }
 .gh-person-content blockquote {
   margin: 0;
-  padding: 0 0 0 2em;
   border: 0;
   font-size: 1.3em;
   line-height: 1.4em;
@@ -584,6 +596,39 @@ a:hover {
 }
 .gh-person-content blockquote p:last-child:after {
   content: "”";
+}
+@media (min-width: 768px) {
+  .gh-person-content blockquote {
+    padding: 0 0 0 2em;
+  }
+}
+.gh-person-content .gh-item {
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+  vertical-align: top;
+  width: calc(100% - 2em) !important;
+}
+@media (min-width: 768px) {
+  .gh-person-content .gh-item {
+    padding: 0 2em 0 2em;
+    display: inline-block;
+    max-width: 39%;
+  }
+}
+@supports (display:grid) {
+  .gh-person-content {
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    .gh-person-content {
+      grid-template-columns: 3fr 4fr;
+      grid-column-gap: 2em;
+    }
+    .gh-person-content .gh-item {
+      padding: 0;
+    }
+  }
 }
 /* footer */
 .gh-social {
