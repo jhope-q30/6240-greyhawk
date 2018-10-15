@@ -15,14 +15,16 @@
         <div class="gh-panel-4">
             <div class="gh_grid gh_grid-1-2-2">
                 <div class="gh-item gh-column-2">
-                    <div class="pad-right-exlarge nopad-tiny nopad-small">
+                    <div class="pad-right-exlarge nopad-tiny nopad-small gh-animate">
                         <h2>Taking a family perspective</h2>
                         <p>Grayhawk is committed to growing the financial legacy of highly successful individuals and their families. Building intergenerational prosperity and wealth is founded upon a thorough understanding of each families’ values, goals and aspirations.</p>
                     </div>
                 </div>
                 <div class="gh-item gh-column-3">
                     <div class="pad-right-exlarge nopad-tiny nopad-small">
-                        <img src="<?php echo docroot; ?>img/Grayhawk_Home_01.jpg" alt="">
+                        <div class="img_ani">
+                            <img src="<?php echo docroot; ?>img/Grayhawk_Home_01.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,10 +35,12 @@
     <div class="gh-container">
         <div class="gh-panel-4">
             <div class="gh_grid gh_grid-1-4">
-                <img src="<?php echo docroot; ?>img/Grayhawk_Home_02.jpg" alt="" class="gh-cspan-3">
+                <div class="gh-cspan-3 img_ani">
+                    <img src="<?php echo docroot; ?>img/Grayhawk_Home_02.jpg" alt="">
+                </div>
             </div>
         </div>
-        <div class="gh_grid gh_grid-1-3">
+        <div class="gh_grid gh_grid-1-3 gh-animate">
             <div class="gh-item">
                 <h2>Extraordinary relationships matter</h2>
             </div>
@@ -52,20 +56,24 @@
 <section>
     <div class="gh-container">
         <div class="gh-panel-4">
-            <img src="<?php echo docroot; ?>img/Grayhawk_Home_03.jpg" alt="">
-        </div>
-        <div class="gh_grid gh_grid-1-2-2">
-            <div class="gh-item gh-column-2 gh-cspan-2">
-                <h2>Endowment style portfolios</h2>
+            <div class="img_ani">
+                <img src="<?php echo docroot; ?>img/Grayhawk_Home_03.jpg" alt="">
             </div>
         </div>
-        <div class="gh_grid gh_grid-1-2-2">
-            <div class="gh-item gh-column-2">
-                <p>Our investment approach leverages the expertise and discipline gained from institutional investing to create a portfolio designed to capitalize on market appreciation while providing protection during market turmoil.</p>
+        <div class="gh-animate">
+            <div class="gh_grid gh_grid-1-2-2">
+                <div class="gh-item gh-column-2 gh-cspan-2">
+                    <h2>Endowment style portfolios</h2>
+                </div>
             </div>
-            <div class="gh-item gh-column-3">
-                <p>We believe our core philosophy of providing broad market exposure balanced against alternative sources of return not typically available to private investors generates an attractive long-term risk-adjusted return for our partner families.</p>
-                <p>As an independent investment firm, we are able to follow an unbiased, agnostic approach to sourcing opportunities that are in the best interests of our partners.</p>
+            <div class="gh_grid gh_grid-1-2-2">
+                <div class="gh-item gh-column-2">
+                    <p>Our investment approach leverages the expertise and discipline gained from institutional investing to create a portfolio designed to capitalize on market appreciation while providing protection during market turmoil.</p>
+                </div>
+                <div class="gh-item gh-column-3">
+                    <p>We believe our core philosophy of providing broad market exposure balanced against alternative sources of return not typically available to private investors generates an attractive long-term risk-adjusted return for our partner families.</p>
+                    <p>As an independent investment firm, we are able to follow an unbiased, agnostic approach to sourcing opportunities that are in the best interests of our partners.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -73,8 +81,10 @@
 <section class="gh-panel-4 nopad-bottom">
     <div class="gh-bkg-grey">
         <div class="gh-container">
-            <img src="<?php echo docroot; ?>img/Grayhawk_Home_04.jpg" alt="">
-            <div class="gh-panel-4">
+            <div class="img_ani">
+                <img src="<?php echo docroot; ?>img/Grayhawk_Home_04.jpg" alt="">
+            </div>
+            <div class="gh-panel-4 gh-animate">
                 <div class="gh_grid gh_grid-1-4">
                     <div class="gh-item gh-cspan-3">
                         <h2 class="emphasized white">What does it mean to be an invaluable partner?</h2>

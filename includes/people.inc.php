@@ -152,7 +152,7 @@ $gf_people = array(
         ),
         array(
             "name" => "Jeff House",
-            "title" => "Senior Director and Investment Counsellor",
+            "title" => "Director, Senior Investment Counsellor",
             "certification" => "CFA",
             "image" => "img/people/Jeff.JPG",
             "social" => array(),

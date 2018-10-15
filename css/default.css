@@ -289,10 +289,12 @@ a:hover {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 }
 .gh-hero img {
   width: 100%;
   display: block;
+  background-color: #4a4a4a;
 }
 .gh-hero .gh-caption {
   position: absolute;
@@ -314,6 +316,23 @@ a:hover {
   line-height: 1.2em;
   color: #fff;
   display: block;
+  opacity: 1;
+  animation-name: _h1_on;
+  animation-duration: 1.14s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-play-state: initial;
+}
+@keyframes _h1_on {
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 300px) {
   .gh-hero .gh-caption .gh-caption-container h1 {
@@ -649,5 +668,28 @@ footer .gh-social {
 @media (max-width: 768px) {
   .text-right {
     text-align: left;
+  }
+}
+/* animations */
+.gh-animate {
+  opacity: 0;
+}
+.gh-animate.active {
+  animation-name: _gh_animate_on;
+  animation-duration: 0.47s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: backwards;
+  opacity: 1;
+}
+@keyframes _gh_animate_on {
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
   }
 }

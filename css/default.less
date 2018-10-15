@@ -9,6 +9,8 @@
 @min-width-medium: 768px;
 @min-width-large: 1024px;
 
+@grey_txt_color:#4a4a4a;
+
 html, body {
     margin:0;
     padding:0;
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5 {
     margin:0 0 0.7em 0;
     padding:0;
     line-height:1.3em;
-    color:#4a4a4a;
+    color:@grey_txt_color;
     display:block;
 }
 h2 {
@@ -138,7 +140,7 @@ p {
     font-family:@lato;
     font-size:1.2em;
     line-height:1.4em;
-    color:#4a4a4a;
+    color:@grey_txt_color;
     display:block;
 }
 
@@ -247,15 +249,17 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
     margin:0 auto;
     padding:0;
     width:100%;
+    overflow:hidden;
 
     img {
         width:100%;
         display:block;
+        background-color:@grey_txt_color;
     }
 
     .gh-caption {
 
-        position:absolute;
+        position: absolute;
         top:0;
         left:0;
         width:100%;
@@ -268,6 +272,7 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
             max-width:@hero_width;
 
             h1 {
+
                 margin:0;
                 max-width:@small_width;
                 font-family:@lusitana;
@@ -275,7 +280,27 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:#4a4a4a; }
                 line-height:1.2em;
                 color:#fff;
                 display:block;
+                opacity:1;
+
+                animation-name: _h1_on;
+                animation-duration: 1.14s;
+                animation-timing-function: ease-in;
+                animation-delay: 0.2s;
+                animation-direction: normal;
+                animation-iteration-count: 1;
+                animation-fill-mode: backwards;
+                animation-play-state: initial;
+
             }
+
+            @keyframes _h1_on {
+                0% {
+                    opacity:0.01;
+                }
+                100% {
+                    opacity:1;
+                }
+              }
 
             @media (min-width: @min-width-tiny) {
                 h1 {
@@ -677,5 +702,30 @@ footer .gh-social {
 @media (max-width: @min-width-medium) {
     .text-right{
         text-align:left;
+    }
+}
+
+/* animations */
+
+.gh-animate {
+    opacity:0;
+}
+.gh-animate.active {
+    animation-name: _gh_animate_on;
+    animation-duration: 0.47s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: backwards;
+    opacity:1;
+}
+@keyframes _gh_animate_on {
+    0% {
+        opacity:0.01;
+    }
+    100% {
+        opacity:1;
     }
 }
