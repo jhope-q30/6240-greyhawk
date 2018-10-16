@@ -178,6 +178,11 @@ h2.emphasized {
   font-size: 3.25em;
   line-height: 1.2em;
 }
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+}
 p {
   margin: 0 0 0.7em 0;
   padding: 0;
@@ -668,6 +673,17 @@ footer .gh-social {
 @media (max-width: 768px) {
   .text-right {
     text-align: left;
+  }
+}
+/* iframe */
+@media (min-width: 300px) {
+  .gh-iframe {
+    padding: 1em 0 2em 0;
+  }
+}
+@media (min-width: 768px) {
+  .gh-iframe {
+    padding: 1em 2em 2em 0;
   }
 }
 /* animations */
