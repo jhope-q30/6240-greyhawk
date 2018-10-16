@@ -22,7 +22,7 @@ function returnNavActive( $page_name, $link_name ){
 <title><?php echo $page_name ? "Greyhawk: " . $page_name : "Greyhawk"; ?></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//fonts.googleapis.com/css?family=Lusitana:400,700|Lato:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lusitana:400,700|Lato:300,400,700" rel="stylesheet">
 <link href="<?php echo docroot; ?>css/default.css" rel="stylesheet">
 </head>
 <body>

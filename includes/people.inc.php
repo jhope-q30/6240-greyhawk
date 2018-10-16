@@ -406,7 +406,7 @@ function gf_get_persons($v, $k, $group){
 function gf_get_person($a){
 
     $link = $_SERVER['REQUEST_URI'] . "person/" . strtolower( clean_string( $a['name'] ) ) . "/";
-    $name = $a['certification'] != "" ? $a['name'] . " " . $a['certification'] : $a['name'];
+    $name = $a['certification'] != "" ? $a['name'] . " <small>" . $a['certification'] . "</small>" : $a['name'];
 
 ?>
 

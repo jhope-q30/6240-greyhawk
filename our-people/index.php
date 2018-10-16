@@ -83,13 +83,13 @@ else: /* show our people html */
 
 ?>
 <section>
-    <div class="gh-hero gh-hero-full">
-        <span class="gh-caption">
-            <div class="gh_grid">
-                <h1>A headline about our people</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="gh-hero">
+        <img src="<?php echo docroot; ?>img/people/Grayhawk_Bios-Group_2U1A1280.jpg" alt="">
+        <div class="gh-caption">
+            <div class="gh-caption-container">
+                <h1>Our People</h1>
             </div>
-        </span>
+        </div>
     </div>
 </section>
 <section>
@@ -98,7 +98,7 @@ else: /* show our people html */
             <div class="gh_grid">
                 <h2>Board of Directors</h2>
             </div>
-            <div class="gh_grid gh_grid-1-3 gh_grid-nogap">
+            <div class="gh_grid gh_grid-1-3">
 
                 <?php echo gf_list_people( 'Board of Directors', $gf_people ); ?>
 
@@ -111,10 +111,10 @@ else: /* show our people html */
         <div class="gh-panel-4">
             <div class="gh_grid gh_grid-1-2 gh_grid-nogap">
                 <div class="gh-item">
-                    <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
+                    <img src="<?php echo docroot; ?>img/people/Grayhawk_Bios-Group_960x640-LEFT_FA.jpg" alt="">
                 </div>
                 <div class="gh-item">
-                    <img src="<?php echo docroot; ?>img/temp-flair-img.jpg" alt="">
+                    <img src="<?php echo docroot; ?>img/people/Grayhawk_Bios-Group_960x640-RIGHT_FA.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@ else: /* show our people html */
             <div class="gh_grid">
                 <h2>Our Team</h2>
             </div>
-            <div class="gh_grid gh_grid-1-3 gh_grid-nogap">
+            <div class="gh_grid gh_grid-1-3">
 
                 <?php echo gf_list_people( 'Our Team', $gf_people ); ?>
 

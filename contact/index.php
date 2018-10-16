@@ -24,7 +24,8 @@ include('../includes/header.inc.php');
                 <div class="gh-item">
                     <h2>For general inquiries please contact:</h2>
                     <p>Allison Comeau – Chief Operating Officer<br>
-Phone: (877) 665-9951</p>
+Phone: (877) 665-9951<br>
+<a href="mailto:acomeau@grayhawk.investments">acomeau@grayhawk.investments</a></p>
                 </div>
                 <div class="gh-item">
                     <div class="pad-right-exlarge nopad-tiny nopad-small">
