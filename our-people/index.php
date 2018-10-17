@@ -150,11 +150,11 @@ else: /* show our people html */
     <div class="gh-container">
         <div class="gh-people-column">
             <div class="gh_grid">
-                <h2>Board of Directors</h2>
+                <h2>Our Team</h2>
             </div>
             <div class="gh_grid gh_grid-1-3">
 
-                <?php echo gf_list_people( 'Board of Directors', $gf_people ); ?>
+                <?php echo gf_list_people( 'Our Team', $gf_people ); ?>
 
             </div>
         </div>
@@ -178,11 +178,11 @@ else: /* show our people html */
     <div class="gh-container">
         <div class="gh-people-column">
             <div class="gh_grid">
-                <h2>Our Team</h2>
+                <h2>Board of Directors</h2>
             </div>
             <div class="gh_grid gh_grid-1-3">
 
-                <?php echo gf_list_people( 'Our Team', $gf_people ); ?>
+                <?php echo gf_list_people( 'Board of Directors', $gf_people ); ?>
 
             </div>
         </div>

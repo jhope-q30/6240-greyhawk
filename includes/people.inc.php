@@ -3,7 +3,8 @@
 $gf_people = array(
     "Board of Directors" => array(
         array(
-            "name" => "Michael G. Kaumeyer",
+            "first_name" => "Michael G.",
+            "last_name" => "Kaumeyer",
             "title" => "President and Chief Executive Officer",
             "certification" => "FEA",
             "image" => "img/people/Mike-K.JPG",
@@ -31,7 +32,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Jeff McCaig",
+            "first_name" => "Jeff",
+            "last_name" => "McCaig",
             "title" => "Board Chair",
             "certification" => "",
             "image" => "img/temp-bio-img.jpg",
@@ -51,7 +53,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Ron Gratton",
+            "first_name" => "Ron",
+            "last_name" => "Gratton",
             "title" => "Board Member",
             "certification" => "",
             "image" => "img/temp-bio-img.jpg",
@@ -69,7 +72,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Nicholas Thadaney",
+            "first_name" => "Nicholas",
+            "last_name" => "Thadaney",
             "title" => "Board Member",
             "certification" => "",
             "image" => "img/temp-bio-img.jpg",
@@ -88,8 +92,9 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Rajiv Silgardo",
-            "title" => "President and Chief Executive Officer",
+            "first_name" => "Rajiv",
+            "last_name" => "Silgardo",
+            "title" => "Board Member",
             "certification" => "",
             "image" => "img/temp-bio-img.jpg",
             "social" => array(),
@@ -111,7 +116,8 @@ $gf_people = array(
     ),
     "Our Team" => array(
         array(
-            "name" => "Greg Gipson",
+            "first_name" => "Greg",
+            "last_name" => "Gipson",
             "title" => "Chief Investment Officer",
             "certification" => "MSc&nbsp;EESOR",
             "image" => "img/people/Greg.JPG",
@@ -134,7 +140,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Allison Comeau",
+            "first_name" => "Allison",
+            "last_name" => "Comeau",
             "title" => "Chief Operating Officer",
             "certification" => "",
             "image" => "img/people/Allison.JPG",
@@ -154,7 +161,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Rick Wilson",
+            "first_name" => "Rick",
+            "last_name" => "Wilson",
             "title" => "Chief Compliance Officer",
             "certification" => "",
             "image" => "img/people/Rick.JPG",
@@ -174,7 +182,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Marc Roston",
+            "first_name" => "Marc",
+            "last_name" => "Roston",
             "title" => "Senior Investment Strategist",
             "certification" => "",
             "image" => "img/people/Marc.JPG",
@@ -194,7 +203,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Deborah Dale",
+            "first_name" => "Deborah",
+            "last_name" => "Dale",
             "title" => "Finance Lead",
             "certification" => "",
             "image" => "img/people/Deb.JPG",
@@ -214,7 +224,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Jeff House",
+            "first_name" => "Jeff",
+            "last_name" => "House",
             "title" => "Director, Senior Investment Counsellor",
             "certification" => "CFA",
             "image" => "img/people/Jeff.JPG",
@@ -235,7 +246,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Ankit Singhal",
+            "first_name" => "Ankit",
+            "last_name" => "Singhal",
             "title" => "Managing Director, Portfolio Manager",
             "certification" => "MBA,&nbsp;CFA",
             "image" => "img/people/Ankit.JPG",
@@ -257,7 +269,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Steven Lam",
+            "first_name" => "Steven",
+            "last_name" => "Lam",
             "title" => "Portfolio Analyst",
             "certification" => "CFA, CIPM",
             "image" => "img/people/Steve.JPG",
@@ -279,7 +292,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Magda Rzeszutek",
+            "first_name" => "Magda",
+            "last_name" => "Rzeszutek",
             "title" => "Manager of Experience",
             "certification" => "",
             "image" => "img/people/Magda.JPG",
@@ -298,7 +312,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Elizabeth Tobin",
+            "first_name" => "Elizabeth",
+            "last_name" => "Tobin",
             "title" => "Experience Lead",
             "certification" => "",
             "image" => "img/people/Elizabeth.JPG",
@@ -318,7 +333,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Mandy Basa",
+            "first_name" => "Mandy",
+            "last_name" => "Basa",
             "title" => "Client Services Manager",
             "certification" => "",
             "image" => "img/people/Mandy.JPG",
@@ -342,7 +358,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Jordan Engel",
+            "first_name" => "Jordan",
+            "last_name" => "Engel",
             "title" => "Client Services Associate",
             "certification" => "",
             "image" => "img/people/Jordan.JPG",
@@ -362,7 +379,8 @@ $gf_people = array(
             )
         ),
         array(
-            "name" => "Michael Pires",
+            "first_name" => "Michael",
+            "last_name" => "Pires",
             "title" => "Client Services Administrator",
             "certification" => "",
             "image" => "img/temp-bio-img.jpg",
@@ -386,8 +404,18 @@ $gf_people = array(
 
 function gf_list_people( $group, $people ){
 
+    // print_r( $people[$group] );
+
+    usort( $people[ $group ], "gf_cmp" );
+
+    // print_r( $people[$group] );
+
     array_walk( $people, 'gf_get_persons', $group );
 
+}
+
+function gf_cmp($a, $b){
+    return strcmp($a["last_name"], $b["last_name"]);
 }
 function gf_list_person( $person, $people ){
 
@@ -398,12 +426,12 @@ function gf_list_person( $person, $people ){
 
         foreach( $item as $k => $v ){
 
-            if( $person == strtolower( clean_string( $v['name'] ) ) ){
+            if( $person == strtolower( clean_string( $v['first_name'] . " " . $v['last_name'] ) ) ){
         
                 $po->title         = $v['title'];
                 $po->certification = $v['certification'];
                 $po->social        = $v['social'];
-                $po->name          = $v['name'];
+                $po->name          = $v['first_name'] . " " . $v['last_name'];
                 $po->image         = $v['image'];
                 $po->phone         = $v['contact']['phone']['direct'] ? $v['contact']['phone']['direct'] : "";
                 $po->quote         = $v['content']['quote'];
@@ -430,8 +458,8 @@ function gf_get_persons($v, $k, $group){
 }
 function gf_get_person($a){
 
-    $link = $_SERVER['REQUEST_URI'] . "person/" . strtolower( clean_string( $a['name'] ) ) . "/";
-    $name = $a['certification'] != "" ? $a['name'] . " <small>" . $a['certification'] . "</small>" : $a['name'];
+    $link = $_SERVER['REQUEST_URI'] . "person/" . strtolower( clean_string( $a['first_name'] . " " . $a['last_name'] ) ) . "/";
+    $name = $a['certification'] != "" ? $a['first_name'] . " " . $a['last_name'] . " <small>" . $a['certification'] . "</small>" : $a['first_name'] . " " . $a['last_name'];
 
 ?>
 
