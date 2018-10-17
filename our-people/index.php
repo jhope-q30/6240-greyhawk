@@ -35,8 +35,44 @@ if( isset( $_GET['person'] ) ): /* get person html */
                 </div>
                 <div class="gh-item">
                     <div class="gh-person-info">
-                        <h1><?php echo $po->name; ?></h1>
+                        <h1>
+                            
+                            <?php echo $po->name; ?>
+
+                            <?php if( $po->certification != ""): ?>
+
+                            <small><?php echo $po->certification; ?></small>
+
+                            <?php endif; ?>
+                    
+                        </h1>
                         <p><?php echo $po->title; ?></p>
+                        
+                        <?php if( $po->phone ): ?>
+
+                        <?php if( !is_array( $po->phone ) ): ?>
+
+                        <p><small>Direct: <?php echo $po->phone; ?></small></p>
+
+                        <?php else: ?>
+
+                        <p><small>
+
+                        <?php
+                        
+                            foreach( $po->phone as $k => $v ){
+
+                                echo $k . ': ' . $v . '<br>';
+
+                            }
+
+                        ?>
+
+                        </small></p>
+
+                        <?php endif; ?>
+
+                        <?php endif; ?>
 
                         <?php
 

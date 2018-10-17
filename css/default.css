@@ -261,6 +261,9 @@ a:hover {
   color: #676c73;
   text-decoration: none;
 }
+#gh-header #gh-nav .active {
+  color: #c35532;
+}
 @media (min-width: 300px) {
   #gh-header #gh-nav {
     width: calc(50% - 2em);
@@ -564,7 +567,7 @@ a:hover {
   font-size: 0.7em;
   font-weight: normal;
 }
-.gh-people-column a.gh-person span.gh-person-title {
+.gh-people-column a.gh-person span.gh-person-t7itle {
   padding-bottom: 0.7em;
   font-size: 1em;
 }
@@ -578,12 +581,24 @@ a:hover {
   margin: 0 0 0.3em 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 4em;
+  font-size: 3em;
+  line-height: 1.15em;
   font-weight: 300;
+}
+.gh-person-hero h1 small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.6em;
+  line-height: 1.4em;
 }
 .gh-person-hero p {
   margin: 0 0 0.9em 0;
   font-size: 1.4em;
+  line-height: 1.3em;
+}
+.gh-person-hero p small {
+  font-size: 0.8em;
+  display: block;
 }
 .gh-person-hero .gh-item {
   align-self: center;
@@ -677,6 +692,9 @@ a:hover {
   max-height: 50px;
   display: inline-block;
 }
+footer p {
+  line-height: 1.2em;
+}
 footer .gh-logo {
   padding: 0 0 1em 0;
 }
@@ -684,6 +702,10 @@ footer .gh-social {
   margin: 0 0 0 0.5em;
   max-width: 30px;
   max-height: 30px;
+}
+footer .gh-item {
+  align-self: end;
+  vertical-align: bottom;
 }
 @media (max-width: 768px) {
   .text-right {

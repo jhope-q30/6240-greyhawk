@@ -12,8 +12,10 @@ $gf_people = array(
             ),
             "contact" => array(
                 "phone" => array(
-                    "toronto" => "647 362 3228",
-                    "calgary" => "587 355 4107",
+                    "direct" => array(
+                        "Toronto" => "647 362 3228",
+                        "Calgary" => "587 355 4107"
+                    ),
                     "main" => "1 877 665 9951"
                 ),
                 "email" => "mkaumeyer@grayhawk.investments"
@@ -118,7 +120,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => "587 355 4112"
                 ),
                 "email" => ""
             ),
@@ -138,7 +140,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => " 587 355 4121"
                 ),
                 "email" => ""
             ),
@@ -159,7 +161,7 @@ $gf_people = array(
             "contact" => array(
                 "phone" => array(
                     "cell" => "403 970 2055",
-                    "main" => "1 877 665 9951"
+                    "direct" => "587 355 4117"
                 ),
                 "email" => "jhouse@grayhawk.investments"
             ),
@@ -179,7 +181,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => " 587 355 4094"
                 ),
                 "email" => ""
             ),
@@ -199,7 +201,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => "587 355 3469"
                 ),
                 "email" => ""
             ),
@@ -219,7 +221,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => "647 695 2229"
                 ),
                 "email" => ""
             ),
@@ -239,7 +241,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "direct" => "647 556 2317", 
+                    "direct" => "647 556 2317",
                     "cell" => "647 242 9370",
                     "main" => "1 877 665 9951"
                 ),
@@ -307,7 +309,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => "587 355 4109"
                 ),
                 "email" => ""
             ),
@@ -346,7 +348,7 @@ $gf_people = array(
             "social" => array(),
             "contact" => array(
                 "phone" => array(
-                    "main" => "1 877 665 9951"
+                    "direct" => "973 433 6672"
                 ),
                 "email" => ""
             ),
@@ -377,12 +379,14 @@ function gf_list_person( $person, $people ){
 
             if( $person == strtolower( clean_string( $v['name'] ) ) ){
         
-                $po->title  = $v['certification'] != "" ? $v['title'] . "<br>" . $v['certification'] : $v['title'];
-                $po->social = $v['social'];
-                $po->name   = $v['name'];
-                $po->image  = $v['image'];
-                $po->quote  = $v['content']['quote'];
-                $po->bio    = $v['content']['bio'];
+                $po->title         = $v['title'];
+                $po->certification = $v['certification'];
+                $po->social        = $v['social'];
+                $po->name          = $v['name'];
+                $po->image         = $v['image'];
+                $po->phone         = $v['contact']['phone']['direct'] ? $v['contact']['phone']['direct'] : "";
+                $po->quote         = $v['content']['quote'];
+                $po->bio           = $v['content']['bio'];
         
             }
 
