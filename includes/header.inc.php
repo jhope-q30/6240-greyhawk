@@ -19,7 +19,7 @@ function returnNavActive( $page_name, $link_name ){
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title><?php echo $page_name ? "Greyhawk: " . $page_name : "Greyhawk"; ?></title>
+<title><?php echo $page_name ? "Grayhawk Investments: " . $page_name : "Grayhawk Investments"; ?></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="//fonts.googleapis.com/css?family=Lusitana:400,700|Lato:300,400,700" rel="stylesheet">
