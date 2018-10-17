@@ -28,7 +28,7 @@ Toronto, Ontario M5V 2L1</small></p>
             <div class="pad-top-medium">
                 <div class="gh_grid gh_grid-1-2">
                     <div class="gh-item">
-                        <p><small>&copy; Copyright Grayhawk Investment Strategies Inc. <?php echo date('Y'); ?></small></p>
+                        <p><small>&copy; <?php echo date('Y'); ?> Copyright Grayhawk Investment Strategies Inc.</small></p>
                     </div>
                     <div class="gh-item">
                         <p class="text-right">
