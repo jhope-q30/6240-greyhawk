@@ -141,7 +141,7 @@ else: /* show our people html */
         <img src="<?php echo docroot; ?>img/people/Grayhawk_Bios-Group_2U1A1280.jpg" alt="">
         <div class="gh-caption">
             <div class="gh-caption-container">
-                <h1>Our People</h1>
+                <h1><small>Our People</small></h1>
             </div>
         </div>
     </div>

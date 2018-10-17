@@ -8,13 +8,13 @@ include('../includes/header.inc.php');
 <main>
 
 <section>
-    <div class="gh-hero gh-hero-full">
-        <span class="gh-caption">
-            <div class="gh_grid">
-                <h1>Contact us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="gh-hero">
+        <img src="<?php echo docroot; ?>img/contact-hero.jpg" alt="">
+        <div class="gh-caption">
+            <div class="gh-caption-container">
+                <h1><small>Contact Us</small></h1>
             </div>
-        </span>
+        </div>
     </div>
 </section>
 <section>
@@ -28,11 +28,12 @@ Phone: 1 877 665 9951<br>
 <a href="mailto:acomeau@grayhawk.investments">acomeau@grayhawk.investments</a></p>
                 </div>
                 <div class="gh-item">
-                    <div class="pad-right-exlarge nopad-tiny nopad-small">
+                    &nbsp;
+                    <?php /* <div class="pad-right-exlarge nopad-tiny nopad-small">
                         <div class="img_ani">
                             <img src="<?php echo docroot; ?>img/Grayhawk_Home_01.jpg" alt="">
                         </div>
-                    </div>
+                    </div> */ ?>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@ Phone: 1 877 665 9951<br>
 </section>
 <section>
     <div class="gh-container">
-        <div class="gh-panel-4">
+        <div class="gh-panel-4 nopad-top">
             <div class="gh_grid gh_grid-1-2">
                 <div class="gh-item">
                     <h3>Toronto Office</h3>
