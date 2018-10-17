@@ -116,6 +116,35 @@ $gf_people = array(
     ),
     "Our Team" => array(
         array(
+            "first_name" => "Michael G.",
+            "last_name" => "Kaumeyer",
+            "title" => "President and Chief Executive Officer",
+            "certification" => "FEA",
+            "image" => "img/people/Mike-K.JPG",
+            "social" => array(
+                "linkedin" => "https://www.linkedin.com/in/michael-kaumeyer-69556613/"
+            ),
+            "contact" => array(
+                "phone" => array(
+                    "direct" => array(
+                        "Toronto" => "647 362 3228",
+                        "Calgary" => "587 355 4107"
+                    ),
+                    "main" => "1 877 665 9951"
+                ),
+                "email" => "mkaumeyer@grayhawk.investments"
+            ),
+            "content" => array(
+                "quote" => "<p>Grayhawk is the culmination of all my experiences both personally and professionally. The ability to work with such a dedicated and talented team in the pursuit of making meaningful contributions to successful families is the most exciting and rewarding work I could ever imagine doing.</p>
+                <p>Working over the years with many successful Canadian families, I became increasingly aware that they were not being exposed to the kind of planning that could deliver enhanced results. While they had access to many opportunities, they weren’t always being given proper advice aligned to their unique needs. I believe nurturing relationships through open dialogue that uncovers individual needs, goals, and aspirations is key to clients understanding the strategic advice we offer, and essential for them to communicate with us so we can align our interests to create resilient portfolios.</p>",
+                "bio" => "<p>Michael Kaumeyer as President and CEO of Grayhawk works with successful Canadian families to bring them exceptional support in growing their legacy. Michael believes that each family brings distinctive values and challenges to the table, and by having a deep understanding of what those are along with their financial aspirations, he can provide extraordinary solutions for family legacy management.</p>
+                <p>Michael has worked in the investment and insurance industries for Canadian Families for over 10 years. He has worked as a relationship management specialist, sales and marketing strategist, as well as a Business Development Officer and Relationship Lead for one of Canada’s largest financial institutions. This experience led him to create a new firm called Strategy Partners, dedicated to understanding clients’ objectives and then working with best-in-class tax and insurance experts to deliver solutions.</p>
+                <p>Michael is a seasoned entrepreneur. After graduating from the University of Alberta he spent seven years expanding his own beverage business into an operation with nation-wide distribution. Following that, he was a senior executive for 7 years, which has allowed him to understand the challenges of both entrepreneurs and executives. Michael recently completed the Institute of Family Enterprise Advisors course and received the FEA designation.</p>
+                <p>Michael has an abiding interest in the links between food and human connections and the quality of relationships fostered over mealtimes. In 2014 he founded “Harvest Moon,” an evening of good food, music, and community hosted at his 7K Panorama Ranch. This annual event raises awareness and funds for Community Food Centres Canada. Michael is currently a board member of Shawnigan Lake School, a Calgary Reads Champion, and is a past board member of the Leighton Art Centre, Social Venture Partners and Decidedly Jazz Danceworks.</p>
+                <p>Michael enjoys spending his spare time at his ranch and country house with his wife and two sons.</p>"
+            )
+        ),
+        array(
             "first_name" => "Greg",
             "last_name" => "Gipson",
             "title" => "Chief Investment Officer",
@@ -404,11 +433,7 @@ $gf_people = array(
 
 function gf_list_people( $group, $people ){
 
-    // print_r( $people[$group] );
-
     usort( $people[ $group ], "gf_cmp" );
-
-    // print_r( $people[$group] );
 
     array_walk( $people, 'gf_get_persons', $group );
 
