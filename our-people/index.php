@@ -96,6 +96,9 @@ if( isset( $_GET['person'] ) ): /* get person html */
     <div class="gh-container">
         <div class="gh-panel-4">
             <div class="gh-person-content">
+
+                <?php if( $po->quote != "" ): ?>
+
                 <div class="gh-item">
                     <blockquote><?php echo $po->quote; ?></blockquote>
                 </div>
@@ -108,6 +111,21 @@ if( isset( $_GET['person'] ) ): /* get person html */
                     <p>&lt;&nbsp;<a href="<?php echo docroot; ?>our-people/">Back to Our People</a></p>
 
                 </div>
+
+                <?php else: ?>
+
+                <div class="gh-person-single gh-cspan-2 text-left">
+
+                <?php echo $po->bio; ?>
+
+                &nbsp;
+
+                <p>&lt;&nbsp;<a href="<?php echo docroot; ?>our-people/">Back to Our People</a></p>
+
+                </div>
+
+                <?php endif; ?>
+
             </div>
         </div>
     </div>

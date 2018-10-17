@@ -150,7 +150,7 @@ p {
     display:block;
 }
 
-.text-left { text-align:left; }
+.text-left { text-align:left !important; }
 .text-right { text-align:right; }
 .text-left { text-align:center; }
 
@@ -173,7 +173,6 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:@grey_txt_color; }
 #gh-header {
 
     margin:0 auto;
-    padding:0;
     max-width:@hero_width;
 
     .gh-logo {
@@ -224,6 +223,9 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:@grey_txt_color; }
         }
     }
     @media (min-width: @min-width-small) {
+
+        padding:0 0 0.5em 0;
+
         #gh-nav {
             a {
                 font-size:1.2em;
@@ -336,7 +338,7 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:@grey_txt_color; }
             @media (min-width: @min-width-large) {
                 h1 {
                     font-size:4.6em;
-                    padding:2em 0 0 25px;
+                    padding:1.5em 0 0 25px;
                 }
             }
 
@@ -694,6 +696,12 @@ a, a:link, a:active, a:focus, a:visited, a:hover { color:@grey_txt_color; }
         text-align:left;
         vertical-align:top;
         width:calc( 100% - 2em ) !important;
+    }
+
+    .gh-person-single {
+        margin:0 auto;
+        width:100%;
+        max-width:@min-width-medium;
     }
 
     @media (min-width: @min-width-medium) {

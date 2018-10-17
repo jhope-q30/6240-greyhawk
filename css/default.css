@@ -193,7 +193,7 @@ p {
   display: block;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-right {
   text-align: right;
@@ -227,7 +227,6 @@ a:hover {
 /* header */
 #gh-header {
   margin: 0 auto;
-  padding: 0;
   max-width: 1400px;
 }
 #gh-header .gh-logo {
@@ -275,6 +274,9 @@ a:hover {
   }
 }
 @media (min-width: 480px) {
+  #gh-header {
+    padding: 0 0 0.5em 0;
+  }
   #gh-header #gh-nav a {
     font-size: 1.2em;
     display: inline-block;
@@ -366,7 +368,7 @@ a:hover {
 @media (min-width: 1024px) {
   .gh-hero .gh-caption .gh-caption-container h1 {
     font-size: 4.6em;
-    padding: 2em 0 0 25px;
+    padding: 1.5em 0 0 25px;
   }
 }
 .gh-hero-full {
@@ -662,6 +664,11 @@ a:hover {
   text-align: left;
   vertical-align: top;
   width: calc(100% - 2em) !important;
+}
+.gh-person-content .gh-person-single {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
 }
 @media (min-width: 768px) {
   .gh-person-content .gh-item {
